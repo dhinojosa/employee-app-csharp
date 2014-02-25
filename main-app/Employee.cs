@@ -16,6 +16,7 @@ namespace mainapp
     {
         private string firstName;
         private string lastName;
+        private string middleName;
         private int age;
 
         public int Age
@@ -30,6 +31,11 @@ namespace mainapp
             this.lastName = lastName;
         }
 
+        public Employee(string firstName, string middleName, string lastName):this(firstName, lastName)
+        {
+            this.middleName = middleName;
+        }
+
         public string GetFirstName()
         {
             return firstName;
@@ -40,6 +46,10 @@ namespace mainapp
             return lastName;
         }
 
+        public string GetMiddleName()
+        {
+            return middleName;
+        }
 
         public override bool Equals(Object obj)
         {
