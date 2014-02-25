@@ -63,7 +63,7 @@ namespace mainapp
         public void TestEmployeeWithMiddleName()
         {
             Employee employee = new Employee("Harry", "S", "Truman");
-            Assert.AreEqual(employee.GetMiddleName(), "Z");
+            Assert.AreEqual(employee.GetMiddleName(), "S");
         }
     }
 }
