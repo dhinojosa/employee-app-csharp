@@ -52,7 +52,7 @@ namespace mainapp
         public override int GetHashCode()
         {
             return (firstName.GetHashCode() + lastName.GetHashCode()) % 233;
-        }
+        } 
 
         public override string ToString()
         {
